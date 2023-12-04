@@ -57,8 +57,6 @@ def transform_nums(nums):
     # transforms "41 48 84" into [41, 48, 84]
     return [num.strip() for num in nums.split(" ") if num.strip()]
 
-score_map = {}
-
 
 @functools.cache
 def get_next_game_nums(line):
