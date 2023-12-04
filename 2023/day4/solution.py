@@ -40,18 +40,17 @@ def get_score_for_line(line):
 
 sum(map(get_score_for_line, lines))
 
-# Part 2
-
-import re
-def get_game_num(line):
-    return int(re.match("Card +(\d+):", line).groups()[0])
-
 ##############
 ##############
 ############## Part 2
 ##############
 ##############
 import functools
+
+import re
+
+def get_game_num(line):
+    return int(re.match("Card +(\d+):", line).groups()[0])
 
 def transform_nums(nums):
     # transforms "41 48 84" into [41, 48, 84]
